@@ -1,0 +1,50 @@
+Commands for creating projects in GITHUB
+--------------------------------------------
+
+From GITHUB repository will be downloaded to local repo
+    > git clone https://github.com/NishaM2526/GUVI-MyLearning.git
+
+check whether remote is configured
+    > git remote add origin https://github.com/NishaM2526/GUVI-MyLearning.git
+
+check the available branch
+    > git branch
+
+create a new branch
+    > git switch -c dev
+
+Add the program files
+    > git add code
+    > git add Data
+
+commit the code
+    > git commit -m "FirstCommit"
+
+Initial code push to GITHUB dev branch
+    > git push -u origin dev
+    (Authentication (personal access token) will be required to push the code)
+
+To switch branch
+    > git switch main
+    > git switch -c prod
+
+Merge prod with dev - If the current branch is "prod", the dev code will be merged with prod.
+    > git merge dev
+
+Push the code to GITHUB "prod" branch
+    > git push -u origin prod
+
+
+
+--------------------------
+Day to day activity:
+--------------------------
+
+To check the status of the branch 
+    > git status
+
+To include other branch created by various users to the origin
+    > git fetch
+
+To have a updated code from GITHUB . GITHUB & local repo sync-up
+    > git pull
