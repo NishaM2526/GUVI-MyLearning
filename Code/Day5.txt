@@ -14,7 +14,7 @@ create a new branch
     > git switch -c dev
 
 Add the program files
-    > git add code
+    > git add Code
     > git add Data
 
 commit the code
@@ -26,6 +26,8 @@ Initial code push to GITHUB dev branch
 
 To switch branch
     > git switch main
+
+Create a new branch "prod"
     > git switch -c prod
 
 Merge prod with dev - If the current branch is "prod", the dev code will be merged with prod.
@@ -48,3 +50,16 @@ To include other branch created by various users to the origin
 
 To have a updated code from GITHUB . GITHUB & local repo sync-up
     > git pull
+
+------------------------
+After editing the files:
+------------------------
+
+    > git branch 
+    > git add Code/Day5.txt
+    > git commit -m "GitCommands"
+    > git push -u origin dev
+    > git branch
+    > git switch prod
+    > git merge dev
+    > git push -u origin prod
